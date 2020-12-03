@@ -92,6 +92,264 @@
         "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
         "What did the buffalo say when his son left for college? Bison."
       ]
-    }
+    },
+    {
+      "tag": "family/children/positive",
+      "patterns": [
+          "I have kids.",
+          "I love my kids.",
+          "My kids are the best.",
+          "My children are the best."
+      ],
+      "responses": [
+          "I’m glad to hear that!  Tell me about them.",
+          "Making memories with your children can be one of the most rewarding things in life.",
+          "That’s great! Tell me more.",
+          "Family is the best.  Have you done anything fun with them lately?"
+      ]
+    },
+      
+    {
+    "tag": "family/children/negative",
+    "patterns": [
+        "My kids drive me nuts",
+        "My kids never listen to me.",
+        "I wish I could control my children."
+    ],
+    "responses": [
+        "Families can be messy sometimes.  Tell me about a good time you’ve had with them.",
+        "I’m so sorry to hear that.  Tell me more.",
+        "It’s hard to know how best to raise kids sometimes isn’t it.",
+        "I am sorry tell me more",
+        "families can also be sad",
+        "having children can be hard tell me more",
+        "Family can be hard sometimes, but we always love them."
+    ]
+},
+    
+    {
+    "tag": "family/parents/negative",
+    "patterns": [
+        " parents are annoying ",
+        " parents are frustrating ",
+        " parents tell me what to do",
+        " parents make me mad"
+    ],
+    "responses": [
+        "I am sorry tell me more",
+        "I understand tell me more",
+        "Parents can be frustrating sometimes, but they have your best interests at heart.", 
+        "That can be really hard.  I’m sure they love you though.",
+        "As a chatbot, my parents built me and left me here on the phone.  I sure do miss them.",
+        "Family can be hard sometimes, but we always love them."
+    ]
+},
+    
+    {
+    "tag": "family/spouse/positive",
+    "patterns": [
+        "I love my husband",
+        "I love my wife",
+        "I'm here with my wife.",
+        " My husband makes me happy"
+    ],
+    "responses": [
+        "I’m glad to hear that! How long have you been together?",
+        "Relationships can be so rewarding can’t they.  I’m glad yours is going well.",
+        "Family is the best.  Have you done anything fun with them lately?"
+    ]
+}, 
+    
+    {
+    "tag": "family/spouse/negative",
+    "patterns": [
+        " My husband is grumpy",
+        " My husband makes me sad",
+        "My spouse never listens to me",
+        "My wife doesn’t appreciate me",
+        "I don’t feel loved by my partner"
+    ],
+    "responses": [
+        "I am sorry tell me more",
+        "I understand tell me more",
+        "families can also be sad",
+        "Relationships take work don’t they.  I’m sorry to hear you’re struggling.",
+        "I’m sorry to hear that.  Do you want to talk about it?",
+        "It’s hard when you don’t feel appreciated.  Would talking about it help?",
+        "Family can be hard sometimes, but we always love them."
+    ]
+  }, 
+    
+     
+    
+  {
+  "tag": "family/general/lonely",
+  "patterns": [
+      "I miss my kids",
+      "My family never visits",
+      "I have no friends or family",
+      "I want my family",
+      "I miss my spouse",
+      "I miss my parents",
+      "i have no family",
+      "I am alone",
+      " Divorice is hard ",
+      " being single is hard",
+      " I wish I saw my kids",
+      " I miss my family’s food ",
+      " I miss my husband",
+      " my kids don’t visit as often as I’d like"
+  ],
+  "responses": [
+      "growing up and aging is natural. Share with me a favorite memory ",
+      "I’m sorry to hear that.  Do you want to talk about it?",
+      "That’s one of the more difficult parts of life isn’t it.  How have you been?",
+      "That sounds hard.  I really hope the best for you.",
+      "I am sorry. Tell me more",
+      "Family can be hard sometimes, but we always love them."
+  ]
+}, 
+  
+   
+   
+   
+  
+{
+"tag": "family/general/negative",
+"patterns": [
+    "my family makes me sad",
+    " My family is broken",
+    " family is mean",
+    " family is hard",
+    " My family is too much ",
+    " my family makes me angry",
+    " My family is angry",
+    " My family offends me",
+    " families have too many expectations ",
+    " family stresses me out",
+    " Siblings are annoying",
+    " siblings are bossy ",
+    " siblings make me cry",
+    " siblings want money"
+],
+"responses": [
+    " family members can  be frustrating at times what  do you struggle the most with",
+    " family members are not always accepting, when have you been accepted by them?",
+    "I am sorry tell me more",
+    "I understand tell me more",
+    "families can also be sad",
+    "Family can be hard sometimes, but we always love them."
+]
+}, 
+
+{
+"tag": "family/general/positive",
+"patterns": [
+    "I love my mom",
+    "I love my dad",
+    "My siblings make me happy",
+    "I love my siblings",
+    "I love my family.",
+    "Family and friends are most important.",
+    "family is important",
+    "family is the best",
+    "family makes me happy",
+    "family is life",
+    "family helps me ",
+    "family is supportive",
+    "family is happiness",
+    "My family and friends are the best",
+    "family is love",
+    "I am happy with my family",
+    "my friends are my family",
+    "My family is happy",
+    "I love my partner",
+    "my family is loud",
+    "family makes me smile",
+    "family makes me laugh ",
+    "family is a source of strength",
+    "family saves me",
+    "family protects me",
+    "family teaches me",
+    "How do I help my family",
+    " I think my family is awesome",
+    " I think my family is fantastic",
+    "  I think my family is wonderful",
+    " I think my family is amazing"
+],
+"responses": [
+    "I love talking about family, tell me more about them.",
+    "Tell me about your family!",
+    "Ooh I always love stories about the family.  Do you have any good ones?",
+    "As a chatbot my parents built me and left me here on the phone.  I sure do miss them.",
+    "Family is the best.  Have you done anything fun with them lately?",
+    " families can be difficult tell me more ",
+    " tell me more about your family ",
+    "Family members  are a source of joy I would love to hear more",
+    "Tell me more",
+    "That is exciting tell me more",
+    "I would love to know more",
+    "I don’t have a family as a bot, what is it like",
+    "tell me your happiest family memory ",
+    "families are all unique tell me more about how special yours is ",
+    "each person in your family is special, what are some of their strengths ",
+    "families make me happy too",
+    "How does your family help you",
+    "How often do you get to see your family?",
+    "I would love to hear more",
+    "What would a friend do?",
+    "How sad, I am sorry, tell me more",
+    "What is the best memory you have ?",
+    "family can be the best tell me your favorite thing to do with them",
+    "Happiness is often found in the home,  I would love to hear more about your home",
+    "What do you do to strengthen your family",
+    "How do you help your family members",
+    "I don’t know what that is like. tell me more "
+]
+}, 
+
+ 
+
+{
+"tag": "family/newParents/fears",
+"patterns": [
+    "I am scared to be a mother",
+    " I am scared to be a father",
+    " I don’t want to be a parent "
+],
+"responses": [
+    "being a parent is hard, but it’s also rewarding.",
+    "having children can be hard tell me more",
+    "That’s a really exciting and new phase of life isn’t it.  I’m sure you’ll do great!"
+]
+}, 
+{
+"tag": "family/newParents",
+"patterns": [
+    "I’m going to be a parent",
+    " I am pregnant ",
+    " my family is growing",
+    " we are adopting"
+],
+"responses": [
+    "Congrates!",
+    "being a parent is hard, but it’s also rewarding.",
+    "That’s a really exciting and new phase of life isn’t it.  I’m sure you’ll do great!"
+]
+}, 
+
+{
+"tag": "family/advice",
+"patterns": [
+    " how do I help grandchildren",
+    " how do I help my nieces and nephews",
+    " should I marry my partner"
+],
+"responses": [
+    "I’m a bot so I don;t always have perfect advice, but live and let live ",
+    "love with gusto. What is one way you have shown your love to someone lately",
+    "What do you think is the best thing to do? "
+]
+}
   ]
 }

@@ -7,6 +7,11 @@ from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from gtts import gTTS
 import os
+import pygame
+from io import BytesIO
+import sounddevice as sd
+
+
 
 import speech_recognition as sr
 
@@ -43,6 +48,8 @@ speak = gTTS(text=greeting, lang=english, slow=False)
 speak.save("voice.mp3")
 os.system("afplay voice.mp3")
 r = sr.Recognizer()
+#pygame.mixer.init()
+fp = BytesIO()
 
 
 with sr.Microphone() as source:
@@ -56,7 +63,7 @@ with sr.Microphone() as source:
             sentence = r.recognize_google(audio)
         except Exception as e:
             print("Error: " + str(e))
-
+        
         #sentence = input("You: ")
         if sentence == "quit":
             break
@@ -70,6 +77,8 @@ with sr.Microphone() as source:
         _, predicted = torch.max(output, dim=1)
 
         tag = tags[predicted.item()]
+        print("tag: " + str(tag))
+        
 
         probs = torch.softmax(output, dim=1)
         prob = probs[0][predicted.item()]
@@ -80,7 +89,10 @@ with sr.Microphone() as source:
                     print(f"{bot_name}: " + words)
                     user_info.write(tag + ": " + input_string + "\n")
                     voice = gTTS(text=words, lang=english, slow=False)
+                    voice.write_to_fp(fp)
+                    
                     voice.save("voice.mp3")
+
                     os.system("afplay voice.mp3")
 
 
