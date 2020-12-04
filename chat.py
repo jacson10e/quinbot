@@ -45,9 +45,9 @@ bot_name = "Quin"
 
 greeting = "Hi, I'm Quin!"
 print("Hi, I'm Quin!")
-speak = gTTS(text=greeting, lang=english, slow=False)
-speak.save("voice.mp3")
-os.system("afplay voice.mp3")
+#speak = gTTS(text=greeting, lang=english, slow=False)
+#speak.save("voice.mp3")
+#os.system("afplay voice.mp3")
 r = sr.Recognizer()
 #pygame.mixer.init()
 fp = BytesIO()
@@ -66,7 +66,7 @@ with sr.Microphone() as source:
             print("Error: " + str(e))
         
         #sentence = input("You: ")
-        if sentence == "quit":
+        if sentence == "goodbye":
             break
         input_string = ''.join([str(elem) for elem in sentence])
         sentence = tokenize(sentence)
@@ -89,12 +89,20 @@ with sr.Microphone() as source:
                     words = f"{random.choice(intent['responses'])}"
                     print(f"{bot_name}: " + words)
                     user_info.write(tag + ": " + input_string + "\n")
-                    voice = gTTS(text=words, lang=english, slow=False)
-                    voice.write_to_fp(fp)
+                    try:
+                        voice = gTTS(words)
+                        #break
+                    except Exception as e:
+                        print(e)
+                    #os.system("afplay voice.mp3")
                     
-                    voice.save("voice.mp3")
 
-                    os.system("afplay voice.mp3")
+                    try:
+                        voice.save("voice.mp3")
+                        #break
+                    except Exception as e:
+                        print(e)
+                    #os.system("afplay voice.mp3")
 
 
         else:
