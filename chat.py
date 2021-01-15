@@ -7,6 +7,7 @@ import torch
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 from gtts import gTTS
+import gtts_token
 import os
 import pygame
 from io import BytesIO
@@ -91,18 +92,12 @@ with sr.Microphone() as source:
                     user_info.write(tag + ": " + input_string + "\n")
                     try:
                         voice = gTTS(words)
-                        #break
-                    except Exception as e:
-                        print(e)
-                    #os.system("afplay voice.mp3")
-                    
-
-                    try:
                         voice.save("voice.mp3")
-                        #break
                     except Exception as e:
                         print(e)
                     #os.system("afplay voice.mp3")
+
+                    os.system("afplay voice.mp3")
 
 
         else:
