@@ -16,13 +16,20 @@ First, create a virtualenv to install all packages:
 virtualenv .env
 ```
 
-Then activate that virtualenv (this should work with WSL on Windows as well):
+If it complains that you do not have a command called `virtualenv`, you should
+install it first:
+
+```
+pip install virtualenv
+```
+
+## Install Dependencies (mac)
+
+First, activate the virtualenv:
 
 ```
 . .env/bin/activate
 ```
-
-## Install Dependencies (mac)
 
 To install the requirements on Mac, you will first need `portaudio` installed, which you
 can do using [homebrew](https://brew.sh/) or another package manager of your choice:
@@ -37,7 +44,16 @@ Then install all of the dependencies of the project:
 pip install -r requirements-mac.txt
 ```
 
-# Install Dependencies (windows)
+## Install Dependencies (windows)
+
+First, activate the virtualenv:
+
+```
+# If you are using WSL (Windows Subsystem for Linux)
+. .env/bin/activate
+# If you are not on WSL
+.env\Scripts\activate.bat
+```
 
 To install the requirements on Windows, you will first need `portaudio` installed, which
 you can do using the following commands:
