@@ -1,6 +1,7 @@
 gTTS==2.1.1
 nltk==3.5
 PyAudio==0.2.11
+sounddevice==0.4.1
 SpeechRecognition==3.8.1
 torch==1.7.0
 torchaudio==0.7.0
